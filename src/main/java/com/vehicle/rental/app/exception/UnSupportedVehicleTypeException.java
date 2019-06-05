@@ -1,6 +1,10 @@
 package com.vehicle.rental.app.exception;
 
-public class UnSupportedVehicleTypeException extends RuntimeException {
+public class UnSupportedVehicleTypeException extends CarRentalServiceException {
+
+	public UnSupportedVehicleTypeException(String string) {
+		super(string);
+	}
 
 	/**
 	 * 

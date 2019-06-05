@@ -1,6 +1,11 @@
 package com.vehicle.rental.app.exception;
 
-public class UnSupportedFuelTypeException extends RuntimeException {
+public class UnSupportedFuelTypeException extends CarRentalServiceException {
+
+	public UnSupportedFuelTypeException(String string) {
+		super(string);
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * 

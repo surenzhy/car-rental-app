@@ -1,10 +1,5 @@
 package com.vehicle.rental.app.domain;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.vehicle.rental.app.bean.Distance;
-import com.vehicle.rental.app.util.RouteInformationHelper;
-
 public final class Route {
 
 	private String fromPlace;

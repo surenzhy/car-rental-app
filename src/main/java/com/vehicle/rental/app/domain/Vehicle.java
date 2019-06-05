@@ -1,9 +1,5 @@
 package com.vehicle.rental.app.domain;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.vehicle.rental.app.config.IEnv;
-
 public class Vehicle {
 
 	private int id;
@@ -20,9 +16,6 @@ public class Vehicle {
 		this.available = false;
 	}
 
-	public int getId() {
-		return id;
-	}
 
 	public VehicleType getVehicleType() {
 		return vehicleType;
@@ -32,8 +25,5 @@ public class Vehicle {
 		return seatingCapacity;
 	}
 
-	public boolean isAvailable() {
-		return available;
-	}
 
 }

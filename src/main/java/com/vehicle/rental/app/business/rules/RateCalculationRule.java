@@ -7,7 +7,7 @@ public abstract class RateCalculationRule {
 	private Integer ORDER = 0;
 
 	public abstract Double applyBusinessRuleAndGetRateForVehicle(Trip trip, Double inputRate);
-
+		
 	public Integer getORDER() {
 		return ORDER;
 	}

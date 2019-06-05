@@ -50,7 +50,7 @@ public class RuleEngineTest {
 	@MockBean
 	IEnv rEnv;
 	
-	String CAR = "CAR";
+	private String CAR = "CAR";
 	private String BUS = "BUS";
 	private String PETROL = "PETROL";
 	private String DIESEL = "DIESEL";
@@ -171,8 +171,7 @@ public class RuleEngineTest {
 		Assert.assertEquals((15.0-1)-(15-1)*.02+overCapacity*1,  re.getFinalRatePerKMForTrip(createTripData("swift", "dezire", BUS, DIESEL, false, "Pune", "Mumbai", env.getSEATING_CAPACITY_MAP().get(BUS), env.getSEATING_CAPACITY_MAP().get(BUS)+2)), 0.0);
 	}
 
-	
-	
+
 	private Trip createTripData(String company, String model, String type, String fuelType, boolean isAC, 
 			 String from, String to, Integer vehicleCapcaity, Integer totalPassengers) {
 	

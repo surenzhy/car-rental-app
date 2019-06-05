@@ -13,7 +13,6 @@ public class VehicleRentalApplication
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
         SpringApplication.run(VehicleRentalApplication.class, args);
     }
 }
