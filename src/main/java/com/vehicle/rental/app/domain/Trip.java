@@ -1,19 +1,20 @@
 package com.vehicle.rental.app.domain;
 
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 public class Trip {
 
 	private String tripId;
-	private User user;
+	private Customer user;
 	private Vehicle vehicle;
-	private Route route;
+	private List<Route> route;
 	private Date pickupDatetime;
 	private Double totalCharge;
 	private Integer totalPessangers;
 
-	public Trip(Vehicle vehicle, Route route, User user, Integer totalPessangers) {
+	public Trip(Vehicle vehicle, List<Route> route, Customer user, Integer totalPessangers) {
 		this.tripId = String.valueOf(UUID.randomUUID());
 		this.user = user;
 		this.vehicle = vehicle;
@@ -29,7 +30,7 @@ public class Trip {
 		return tripId;
 	}
 
-	public User getUser() {
+	public Customer getUser() {
 		return user;
 	}
 
@@ -37,7 +38,7 @@ public class Trip {
 		return vehicle;
 	}
 
-	public Route getRoute() {
+	public List<Route> getRoute() {
 		return route;
 	}
 
