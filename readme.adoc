@@ -1,7 +1,5 @@
 = Car Rental Service App
 
-This repo contains a simple application that consists of three microservices. The sample application uses three services:
-
 === Create package
 
 mvn clean package
